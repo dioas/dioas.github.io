@@ -1,0 +1,343 @@
+@media screen and ( max-width: 600px) {
+    body {
+        overflow: auto;
+    }
+
+
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+li {
+    list-style: none;
+    font-family: 'Anton', sans-serif;
+}
+
+span {
+    font-family: 'Abril Fatface', cursive;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    color: #031620;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+
+
+/* Kiri */
+
+.l {
+    float: left;
+    padding: 0;
+    z-index: 1;
+    height: 100vh;
+    z-index: 1;
+}
+
+.text-1 {
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+    z-index: 3;
+}
+
+.social-media {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    word-spacing: 20px;
+}
+
+
+/* Kanan */
+
+.r {
+    float: left;
+    padding: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.logo {
+    width: 20%;
+    height: 25vh;
+    float: left;
+    position: absolute;
+    transition-duration: 2s;
+}
+
+.kanan {
+    width: 100%;
+    height: 25vh;
+    float: left;
+    transition-duration: 2s;
+    background-color: rgba(4, 37, 55, 1);
+    z-index: 2;
+}
+
+.kanan:hover {
+    /*transform:translate(400px);*/
+    background-color: rgba(4, 37, 55, 0.5);
+}
+
+.kanan:hover .logo {
+    display: inline-block;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    transition-duration: 2s;
+    left: 0;
+}
+
+.kanan:hover p {
+    color: rgba(255, 255, 255, 1);
+    transition-duration: 3s;
+}
+
+.bungkus {
+    overflow: hidden;
+}
+
+.text-2 {
+    position: absolute;
+    top: 30px;
+    right: 45%;
+    font-size: 50px;
+    background-color: #808080;
+    width: 30%;
+    width: 10%;
+}
+
+.gambar-Profile {
+	background-image:url(dio%20Profile.jpg); width: 100%; height: 25vh; position: relative; float: left;
+}
+
+.gambar-Resume {
+    background: url(Resume.jpg); width: 100%; height: 100%; width: 100%; height: 25vh; position: relative; float: left;
+}
+
+.gambar-Portofolio {
+    background: url(Portofolio.jpg); width: 100%; height: 100%; width: 100%; height: 25vh; position: relative; float: left;
+}
+
+.gambar-contact {
+    background: url(contact.jpg); width: 100%; height: 100%; width: 100%; height: 25vh; position: relative; float: left;
+}
+
+
+/* Profile */
+
+.text-3 {
+    position: absolute;
+    top: 80%;
+    right: 50%;
+    text-align: center;
+    width: 30%;
+    z-index: 3;
+}
+
+.text-3 h1 {
+    font-size: 70px;
+}
+
+.r-p {
+    float: left;
+    padding: 0;
+    z-index: 1;
+    overflow: scroll;
+    position: relative;
+    padding: 60px;
+    height: 98vh;
+}
+
+.r-p p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.CV {
+    width: 100%;
+    float: left;
+}
+
+.CV li {
+    width: 100%;
+    display: inline-block;
+}
+
+.border {
+    border-bottom: rgba(204, 204, 204, 1) 3px; margin-bottom: 50px; text-decoration: underline; text-decoration-color:red;
+}
+
+.cv-table {
+    list-style: outside none none;
+    padding: 0px;
+    margin: 40px 0 30px;
+    vertical-align: bottom;
+    display: inline-block;
+    width: 100%;
+}
+
+.cv-table-left {
+    float: left;
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.cv-table-right {
+    float: right;
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.cv-icon {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.cv-icon-block {
+    position: relative;
+    width: 50%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.cv-icon-container {
+    background-color: rgba(204, 204, 204, 1);
+    position: relative;
+    text-align: center;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    padding: 0;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.cv-icon-text {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+
+/* Panel */
+
+.panel {
+    min-width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: -200%;
+    position: absolute;
+    background: #000;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.6);
+    z-index: 4;
+    transition: all 1s ease-in-out;
+    z-index: 999;
+}
+
+.panel:target {
+    margin-top: 0%;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+/* tombol back */
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 50%;
+    height: 100%;
+    font-size: 50px;
+}
+.back a {
+  top: 25px;
+  left: 50px;
+  position: absolute;
+}
+
+/* Resume */
+
+.cv-resume {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.cv-resume-title {
+    border-bottom: 1px solid #f3f3f3;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.cv-resume h4 p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.skill-box {
+    background-color: aliceblue;
+    border: 1px solid #f3f3f3;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 35px;
+    transition: background-color 0.4s linear 0s;
+}
+
+.skill-tittle {
+    position: absolute;
+    top: 0pxl;
+    left: 0px;
+    display: inline-block;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.skill-bar {
+    background-color: #f3f3f3;
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.01) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.01) 50%, rgba(0, 0, 0, 0.01) 75%, transparent 75%, transparent);
+    height: 100%;
+    animation: 5s linear 0s normal none infinite running animate-bg;
+    background-size: 40px 40px;
+    box-sizing: border-box;
+}
+.skill-percent {position: absolute; right: 15px; top: 0px; height: 40px; line-height: 40px; font-size: 15px; opacity: 0.5; color: dodgerblue;}
+.skill-box span {font-family: 'Raleway', sans-serif;}
+
+
+/* Portofolio */
