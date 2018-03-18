@@ -47,24 +47,7 @@
 
 <body>
   <div id=app></div>
-  <script>
-    if ('serviceWorker' in navigator && 'PushManager' in window) {
-      console.log('Service Worker and Push is supported');
-
-      navigator.serviceWorker.register('pwabuilder-sw.js')
-      .then(function(swReg) {
-        console.log('Service Worker is registered', swReg);
-
-        swRegistration = swReg;
-        initialiseUI();
-      })
-      .catch(function(error) {
-        console.error('Service Worker Error', error);
-      });
-    } else {
-      console.warn('Push messaging is not supported');
-    }
-  </script>
+  <script src="/trigger.js"></script>
   <script type=text/javascript src=/static/js/manifest.bbff9169a85d22a0b0e0.js></script>
   <script type=text/javascript src=/static/js/vendor.c62e20f974b8cae07fdc.js></script>
   <script type=text/javascript src=/static/js/app.d46514655016fe583c33.js></script>
